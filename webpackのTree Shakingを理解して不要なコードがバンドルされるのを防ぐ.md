@@ -13,6 +13,8 @@
 - [babel-core - npm](https://www.npmjs.com/package/babel-core)  
   1 年くらい更新されていない。いまだと @babel/core か。
   とはいえ、とりあえず言うとおりにやってみる
+  → @babel/core が無いというエラーが出るので、@babel を使った方がよさそう
 
 - [babel-preset-env · Babel](https://babeljs.io/docs/en/6.26.3/babel-preset-env)  
   こちらも同様に、いまは @babel/preset-env
+  また、babelrc の env という記述も、@babel/env にしないとエラーになる
