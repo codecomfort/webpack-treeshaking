@@ -1,7 +1,13 @@
-import { map } from 'lodash'
+import { Row, Accordion as MyAccordion } from 'react-bootstrap'
+import {
+  map,
+  differenceWith,
+  divide,
+  drop,
+  dropRight,
+  dropRightWhile
+} from 'lodash'
 import { moduleB } from './modules'
-import fullImport from './fullimport'
 
 moduleB()
-map()
-fullImport()
+const r = Row

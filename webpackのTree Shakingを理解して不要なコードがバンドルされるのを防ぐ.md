@@ -19,7 +19,15 @@
   こちらも同様に、いまは @babel/preset-env
   また、babelrc の env という記述も、@babel/env にしないとエラーになる
 
-## 現在、modules: false は必要なさそう
+## 20191013 現在、modules: false は必要なさそう
 
 - babelrc に modules: false を記述しなくても、結果は変わらなかった
   - webpack --display-used-exports のコンソール出力、bundle.js とも変わりない(普通に tree shaking されている)
+
+## 20191013 現在、react-bootstrap の import
+
+- lib 以下ではなく、react-bootstrap 直下にある  
+  解説の通りにやってみてもエラーになると思ったら、そもそも from 'react-bootstrap/lib/～' で import できない
+- Grid は無いぽい
+- そもそも default export が無くなっていて、全体インポートできない  
+  → babelrc に設定を入れようが入れまいが、変化なし
