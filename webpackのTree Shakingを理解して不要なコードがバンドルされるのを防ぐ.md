@@ -18,3 +18,8 @@
 - [babel-preset-env · Babel](https://babeljs.io/docs/en/6.26.3/babel-preset-env)  
   こちらも同様に、いまは @babel/preset-env
   また、babelrc の env という記述も、@babel/env にしないとエラーになる
+
+## 現在、modules: false は必要なさそう
+
+- babelrc に modules: false を記述しなくても、結果は変わらなかった
+  - webpack --display-used-exports のコンソール出力、bundle.js とも変わりない(普通に tree shaking されている)
