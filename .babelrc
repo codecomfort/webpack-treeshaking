@@ -1,3 +1,13 @@
 {
-  "presets": [["@babel/env"]]
+  "presets": [["@babel/env"]],
+  "plugins": [
+    [
+      "transform-imports",
+      {
+        "lodash": {
+          "transform": "lodash/${member}"
+        }
+      }
+    ]
+  ]
 }

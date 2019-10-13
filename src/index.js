@@ -1,4 +1,4 @@
-import map from 'lodash/map'
+import { map } from 'lodash'
 import { moduleB } from './modules'
 
 moduleB()
