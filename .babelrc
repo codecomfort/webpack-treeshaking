@@ -5,7 +5,8 @@
       "transform-imports",
       {
         "lodash": {
-          "transform": "lodash/${member}"
+          "transform": "lodash/${member}",
+          "preventFullImport": true
         }
       }
     ]
